@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- 2. CSS - Design the page layout and style -->
+    
+</head>
+<body>
+
+    <!-- 1. HTML - Single file structure -->
+    <div class="container">
+        <h1>Dictionary</h1>
+
+        <!-- Search Bar -->
+        <form id="search-form">
+            <input type="text" id="word-input" placeholder="Type a word here..." required autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Error message container -->
+        <div id="error-message"></div>
+
+        <!-- Section to display results -->
+        <div id="results-section">
+            <div class="word-header">
+                <h2 id="display-word"></h2>
+                <span id="pronunciation"></span>
+            </div>
+
+            <!-- Placeholder for dynamic audio playback -->
+            <audio id="audio-player" controls style="display: none;"></audio>
+
+            <!-- Placeholder for dynamic definitions -->
+            <div id="definitions-container"></div>
+
+            <!-- Placeholder for dynamic synonyms -->
+            <div class="synonyms-wrapper">
+                <span class="synonyms-title">Synonyms: </span>
+                <span id="display-synonyms"></span>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
